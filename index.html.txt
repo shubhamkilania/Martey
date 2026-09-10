@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MARTEY — Everything. One Marketplace.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-top">
+
+            <a href="#" class="logo">
+                MARTEY<span>.</span>
+            </a>
+
+            <div class="search-area">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products, brands and categories..."
+                >
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="header-btn" id="wishlistButton">
+                    <span>♡</span>
+                    <small>Wishlist</small>
+                </button>
+
+                <button class="header-btn cart-button" id="cartButton">
+                    <span>🛒</span>
+                    <small>Cart</small>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button class="account-btn" id="accountButton">
+                    Account
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <nav class="category-bar">
+
+            <div class="category-container">
+
+                <button class="category-link active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-link" data-category="fashion">
+                    Fashion
+                </button>
+
+                <button class="category-link" data-category="electronics">
+                    Electronics
+                </button>
+
+                <button class="category-link" data-category="home">
+                    Home
+                </button>
+
+                <button class="category-link" data-category="beauty">
+                    Beauty
+                </button>
+
+                <button class="category-link" data-category="accessories">
+                    Accessories
+                </button>
+
+                <button class="category-link" data-category="sports">
+                    Sports
+                </button>
+
+                <button class="category-link" data-category="gaming">
+                    Gaming
+                </button>
+
+                <button class="category-link" data-category="more">
+                    More
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-tag">
+                    THE NEW MARKETPLACE
+                </div>
+
+                <h1>
+                    Everything you want.
+                    <span>All in one place.</span>
+                </h1>
+
+                <p>
+                    Discover products from brands, creators and independent
+                    sellers — all together on MARTEY.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" id="startShopping">
+                        Start Shopping →
+                    </button>
+
+                    <button class="outline-btn" id="sellButton">
+                        Sell on MARTEY
+                    </button>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>10K+</strong>
+                        <span>Products</span>
+                    </div>
+
+                    <div>
+                        <strong>1K+</strong>
+                        <span>Sellers</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Marketplace</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="floating-card card-one">
+                    <span>🔥</span>
+                    <div>
+                        <strong>Trending</strong>
+                        <small>New arrivals</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <span>⚡</span>
+                    <div>
+                        <strong>Fast Deals</strong>
+                        <small>Limited offers</small>
+                    </div>
+                </div>
+
+                <div class="hero-product">
+
+                    <div class="product-shape">
+                        M
+                    </div>
+
+                    <div class="hero-product-text">
+                        <span>MARTEY</span>
+                        <strong>SHOP<br>SMART.</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="section" id="categories">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">EXPLORE</span>
+                    <h2>Shop by category</h2>
+                </div>
+
+                <button class="text-button">
+                    View all →
+                </button>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon fashion-icon">👕</div>
+                    <h3>Fashion</h3>
+                    <p>Style & clothing</p>
+                </div>
+
+                <div class="category-card" data-category="electronics">
+                    <div class="category-icon electronics-icon">💻</div>
+                    <h3>Electronics</h3>
+                    <p>Tech & gadgets</p>
+                </div>
+
+                <div class="category-card" data-category="home">
+                    <div class="category-icon home-icon">🏠</div>
+                    <h3>Home</h3>
+                    <p>Make it yours</p>
+                </div>
+
+                <div class="category-card" data-category="beauty">
+                    <div class="category-icon beauty-icon">✨</div>
+                    <h3>Beauty</h3>
+                    <p>Care & beauty</p>
+                </div>
+
+                <div class="category-card" data-category="accessories">
+                    <div class="category-icon accessories-icon">⌚</div>
+                    <h3>Accessories</h3>
+                    <p>Complete your look</p>
+                </div>
+
+                <div class="category-card" data-category="sports">
+                    <div class="category-icon sports-icon">🏀</div>
+                    <h3>Sports</h3>
+                    <p>Play better</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="section products-section" id="products">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">DISCOVER</span>
+                    <h2>Trending products</h2>
+                </div>
+
+                <button class="text-button" id="clearFilter">
+                    View all →
+                </button>
+
+            </div>
+
+
+            <div class="product-grid" id="productGrid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <article class="product-card" data-category="fashion">
+
+                    <div class="product-image image-purple">
+
+                        <span class="product-badge">
+                            TRENDING
+                        </span>
+
+                        <button class="heart-btn">
+                            ♡
+                        </button>
+
+                        <div class="mock-product tshirt">
+                            TEE
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            FASHION
+                        </span>
+
+                        <h3>Premium Oversized T-Shirt</h3>
+
+                        <div class="rating">
+                            ★★★★★ <span>(124)</span>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹799</strong>
+                            <del>₹1,299</del>
+                        </div>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product-card" data-category="electronics">
+
+                    <div class="product-image image-blue">
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+                        <button class="heart-btn">
+                            ♡
+                        </button>
+
+                        <div class="mock-product headphones">
+                            🎧
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            ELECTRONICS
+                        </span>
+
+                        <h3>Wireless Headphones</h3>
+
+                        <div class="rating">
+                            ★★★★★ <span>(89)</span>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹1,999</strong>
+                            <del>₹2,999</del>
+                        </div>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product-card" data-category="accessories">
+
+                    <div class="product-image image-orange">
+
+                        <span class="product-badge">
+                            HOT
+                        </span>
+
+                        <button class="heart-btn">
+                            ♡
+                        </button>
+
+                        <div class="mock-product watch">
+                            ⌚
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            ACCESSORIES
+                        </span>
+
+                        <h3>Minimal Smart Watch</h3>
+
+                        <div class="rating">
+                            ★★★★★ <span>(211)</span>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹2,499</strong>
+                            <del>₹3,499</del>
+                        </div>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product-card" data-category="home">
+
+                    <div class="product-image image-green">
+
+                        <span class="product-badge">
+                            DEAL
+                        </span>
+
+                        <button class="heart-btn">
+                            ♡
+                        </button>
+
+                        <div class="mock-product lamp">
+                            💡
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            HOME
+                        </span>
+
+                        <h3>Modern Desk Lamp</h3>
+
+                        <div class="rating">
+                            ★★★★★ <span>(76)</span>
+                        </div>
+
+                        <div class="price-row">
+                            <strong>₹899</strong>
+                            <del>₹1,499</del>
+                        </div>
+
+                        <button class="add-cart">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <div class="empty-state" id="emptyState">
+                <h3>No products found</h3>
+                <p>Try another search or category.</p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SELLER CTA ================= -->
+
+        <section class="seller-section">
+
+            <div class="seller-content">
+
+                <span class="eyebrow light">
+                    FOR SELLERS
+                </span>
+
+                <h2>
+                    Your products deserve
+                    <span>a bigger marketplace.</span>
+                </h2>
+
+                <p>
+                    Create your store on MARTEY, reach new customers and
+                    grow your business from one simple dashboard.
+                </p>
+
+                <button class="seller-btn" id="sellerButton">
+                    Start Selling →
+                </button>
+
+            </div>
+
+
+            <div class="seller-dashboard-preview">
+
+                <div class="dashboard-top">
+                    <span>Seller Dashboard</span>
+                    <span class="live-dot">● Live</span>
+                </div>
+
+                <div class="dashboard-number">
+                    ₹48,920
+                    <small>+18.4%</small>
+                </div>
+
+                <p>This month's sales</p>
+
+                <div class="chart">
+
+                    <span style="height:35%"></span>
+                    <span style="height:55%"></span>
+                    <span style="height:42%"></span>
+                    <span style="height:72%"></span>
+                    <span style="height:58%"></span>
+                    <span style="height:85%"></span>
+                    <span style="height:100%"></span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="feature">
+                <div>🛡️</div>
+                <h3>Secure Shopping</h3>
+                <p>Your shopping experience comes first.</p>
+            </div>
+
+            <div class="feature">
+                <div>🚚</div>
+                <h3>Reliable Delivery</h3>
+                <p>Products delivered to your doorstep.</p>
+            </div>
+
+            <div class="feature">
+                <div>↩️</div>
+                <h3>Easy Returns</h3>
+                <p>Simple and transparent return process.</p>
+            </div>
+
+            <div class="feature">
+                <div>💬</div>
+                <h3>Seller Support</h3>
+                <p>Support for sellers and customers.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo footer-logo">
+                    MARTEY<span>.</span>
+                </a>
+
+                <p>
+                    Everything. One marketplace.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Marketplace</h4>
+
+                <a href="#">About MARTEY</a>
+                <a href="#">Shop</a>
+                <a href="#">Categories</a>
+                <a href="#">Deals</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>For Sellers</h4>
+
+                <a href="#">Start Selling</a>
+                <a href="#">Seller Dashboard</a>
+                <a href="#">Seller Guide</a>
+                <a href="#">Pricing</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Help</h4>
+
+                <a href="#">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 MARTEY. All rights reserved.</span>
+
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div class="toast" id="toast">
+        Product added to cart
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
